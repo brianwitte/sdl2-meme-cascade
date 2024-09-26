@@ -1,0 +1,49 @@
+SDL2 Meme Cascade Program
+
+Overview:
+The SDL2 Meme Cascade Program is a high-performance, real-time
+application built with SDL2 for rendering cascading memes, audio
+playback, and dynamic visual effects.
+
+System requirements:
+- Operating System: Linux, Windows, or macOS
+- Graphics: SDL2-supported hardware acceleration or software rendering fallback
+- Audio: SDL2-supported audio output
+- Memory: 100MB RAM (minimum)
+- Storage: 10MB for program and assets
+- Dependencies:
+  - SDL2
+  - SDL2_ttf
+
+Build & run:
+  make
+  ./bin/meme_cascade
+
+Program Features:
+- Cascading Memes
+
+Safety & performance considerations:
+- Memory Safety: All resources, including textures and audio buffers,
+  are allocated dynamically and freed upon termination or when no
+  longer required. No direct memory manipulation is employed without
+  safe abstraction layers.
+- Real-time Execution: All rendering operations are conducted in
+  real-time with a frame rate target of 60 FPS. Audio playback is
+  synchronized to rendering, and frames are rendered with minimal
+  latency.
+- Failure Modes: The program will exit gracefully in the event of a
+  critical resource load failure (e.g., missing texture or audio
+  file). Warnings are logged to the console, and resource cleanup is
+  performed upon termination.
+- Concurrency: The program operates in a single-threaded environment
+  to ensure deterministic behavior and minimize the risk of race
+  conditions.
+
+Usage Instructions:
+- Upon execution, the user will experience a cascade of meme images,
+  wiggling center image, synchronized audio, and dynamic text effects.
+
+Known Limitations:
+- Limited to 10 meme images on-screen simultaneously.
+- Image scaling and velocities are fixed within predefined ranges.
+- No support for custom input during program execution.

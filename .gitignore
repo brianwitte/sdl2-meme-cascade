@@ -1,0 +1,31 @@
+# Compiled object files
+*.o
+
+# Compiled dynamic libraries
+*.so
+
+# Compiled static libraries
+*.a
+*.lib
+
+# Executable files
+bin/
+rand_tilemap_game
+
+# Debug files
+*.dSYM/
+*.su
+*.swp
+
+# Editor-specific files
+*~
+.vscode/
+.idea/
+
+# Build artifacts
+*.log
+*.tmp
+
+# CTags/TAGS
+tags
+TAGS
